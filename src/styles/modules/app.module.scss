@@ -1,0 +1,59 @@
+@import "../_mixins.scss";
+
+.app__wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.appHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.emptyText {
+  // display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--black-2);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: var(--gray-2);
+  width: max-content;
+  height: auto;
+}
+
+//Add
+
+.app__bg {
+  background-color: var(--primaryPurple);
+  display: flex;
+  border: 1px solid black;
+}
+
+.footer {
+  text-align: center;
+  padding: 6px;
+  color: black;
+  bottom: 1vh;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 0; //checkbox,edit and delete buttons to make work
+}
+
+.app__content_bgimg {
+  @media (min-width: 768px) {
+    background-image: url("../../assets/bgImage.webp");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    z-index: 0;
+    top: 40%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+	left:0;
+  }
+}
